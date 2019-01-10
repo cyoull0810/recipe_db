@@ -1,0 +1,28 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/11/2002  08:38 PM           114,340 SpicedGreens-FetaSalad.jpg
+07/13/2002  03:55 PM            51,134 SpinachOrangeSalad.jpg
+09/20/2001  01:56 PM             3,061 SpinachSalad.htm
+08/28/2002  07:33 AM             3,215 WPAsianVinaigrette.htm
+07/11/2002  08:38 PM                97 RussianDressing.txt
+09/20/2001  03:35 PM               618 CornRelish.txt
+09/06/2001  06:20 AM             1,485 mixed_greens.txt
+07/11/2002  08:36 PM               912 AntipastoSalad.txt
+07/11/2002  08:36 PM               629 FestiveCranberrySalad.txt
+07/11/2002  08:37 PM               788 GermanPotatoSalad.txt
+07/17/2002  04:39 PM           144,475 LayeredFruitSalad.jpg
+06/09/2007  04:38 PM               683 load_blob.txt
+07/11/2002  08:37 PM            38,528 OliveGrdnDressing.jpg
+09/06/2001  06:20 AM               595 t
+11/22/2001  06:38 AM             3,105 MexicanPastaSalad.htm
+07/11/2002  08:39 PM             1,153 WildRiceSalad.txt
+07/11/2002  07:51 PM             4,447 GreenTomatoRockShrimpSalad.htm
+07/11/2002  08:39 PM            83,022 SpinachShrimpSalad.jpg

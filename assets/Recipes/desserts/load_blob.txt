@@ -1,0 +1,117 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/17/2002  04:12 PM            39,757 GodivaChoclateMouse.jpg
+07/17/2002  04:48 PM            58,583 PeanutButterCreamPie.jpg
+07/17/2002  03:35 PM            75,886 BlueberryCobbler.jpg
+07/17/2002  04:57 PM            58,340 SourCreamPoundCake.jpg
+07/17/2002  03:37 PM            93,780 BreadPuddingBluLemSauce.jpg
+07/17/2002  04:01 PM           291,692 DeltaMochaChiffonCake.jpg
+07/17/2002  03:31 PM           157,764 BananaNutMuffins.jpg
+07/17/2002  03:50 PM           172,055 CinnamonStreuselCoffeeCake.jpg
+07/17/2002  03:38 PM            80,451 Brownies.jpg
+07/17/2002  04:44 PM           107,348 NYCheescake.jpg
+07/11/2002  07:17 PM             4,687 BananaCake.htm
+07/17/2002  04:39 PM           152,545 LemonAngleFoodCake.jpg
+07/17/2002  04:41 PM            86,182 MochaCheescake.jpg
+07/17/2002  03:34 PM            85,342 BlubryPecanCobbler.jpg
+07/17/2002  04:44 PM            63,180 OatmealRasinCookies.jpg
+07/17/2002  04:46 PM           109,302 PeachPralineCobbler.jpg
+10/24/2004  04:10 PM            10,063 BaklaSquares.htm
+07/17/2002  05:02 PM            44,771 TouchdownChoclateFudge.jpg
+07/17/2002  04:01 PM           113,959 DoubleChoclateMintBars.jpg
+07/17/2002  05:01 PM           249,070 TexasCake.jpg
+11/25/2001  11:42 AM            43,210 PoachedPearsGingerbread.htm
+07/17/2002  03:23 PM            97,570 AppleCheesecake.jpg
+07/17/2002  05:02 PM           367,187 UltimateCheesecake.jpg
+07/17/2002  04:58 PM           193,710 StrawberryPastries.jpg
+07/17/2002  03:32 PM           114,362 BananaStreuselPie.jpg
+07/17/2002  04:49 PM            90,488 PecanRefigeratorCookies.jpg
+07/17/2002  03:47 PM            73,548 ChocolateMintWafers.jpg
+07/17/2002  03:44 PM           145,488 ChocolateAmaretoCheesecake.jpg
+07/17/2002  04:00 PM           275,982 DecadentFudgeCake.jpg
+10/18/2001  08:22 AM             3,765 APPLE_CRISP.htm
+07/17/2002  04:41 PM           123,497 LemonUpsideDownCake.jpg
+10/24/2004  04:10 PM             6,885 WalnutCaramelTart.htm
+07/17/2002  04:53 PM            58,635 SoftLemonCookies.jpg
+07/17/2002  03:33 PM            47,561 Biscotti.jpg
+07/17/2002  03:23 PM           156,516 AppleWalnutMuffins.jpg
+07/17/2002  03:39 PM           181,519 CappuccinoTriangles.jpg
+07/17/2002  04:45 PM           162,669 PeachApricotCobbler.jpg
+07/17/2002  04:53 PM            96,471 ShortbreadCookies.jpg
+11/19/2001  05:45 PM             1,604 ChocolateFondue.htm
+07/17/2002  04:59 PM           133,704 StrawberryShortcake.jpg
+07/17/2002  04:48 PM            78,075 PeanutButterPie.jpg
+10/24/2004  04:10 PM             1,211 BaklaSquares.txt
+07/17/2002  03:45 PM            51,028 ChocolateCakeBlackMagic.jpg
+07/17/2002  03:38 PM            84,243 ButtermilkPralines.jpg
+07/17/2002  05:00 PM            64,824 SugarSpiceCookeis.jpg
+07/17/2002  03:59 PM            91,370 CreamyChocolatePie.jpg
+07/17/2002  04:54 PM           155,911 Sopaipillas.jpg
+12/10/2002  05:48 PM            22,366 LimeMeltaways.htm
+07/17/2002  03:59 PM            86,985 CreamyBananaPie.jpg
+07/17/2002  04:58 PM            93,735 SpicePineappleUDCake.jpg
+07/17/2002  05:11 PM             3,645 MargaritaCheesecake.htm
+07/17/2002  04:51 PM           195,911 PumpkinPecanPie.jpg
+07/17/2002  03:40 PM            84,207 CarrotCake.jpg
+07/17/2002  03:48 PM            41,749 ChocolatePotdeCreme.jpg
+07/17/2002  04:38 PM           158,165 GreekWalnutCake.jpg
+07/17/2002  03:36 PM           100,395 breadpudding.jpg
+11/25/2001  09:43 AM            63,505 PoachedPearsGingerbread1.htm
+07/17/2002  03:58 PM            70,060 CreamSundaeDessert.jpg
+07/17/2002  04:05 PM           108,562 Flan.jpg
+07/17/2002  04:50 PM           220,420 PumpkinCheesecake.jpg
+11/19/2001  04:56 PM             7,536 SpicyOatmealRaisinCookies.htm
+07/17/2002  05:17 PM            51,371 SummerPie.jpg
+07/17/2002  04:08 PM            86,639 FluffyLemonPie.jpg
+07/17/2002  04:50 PM            96,537 PumpkinBread.jpg
+12/23/2002  05:14 PM             6,350 Double-CrustApplePie.htm
+06/09/2007  10:42 AM               323 load_blob.txt
+07/17/2002  04:41 PM            98,616 MamaSpiceCake.jpg
+07/17/2002  03:51 PM            68,275 CranberryCake.jpg
+07/17/2002  03:25 PM            62,217 BakeSaleLemonBars.jpg
+07/17/2002  04:40 PM            74,568 LemonSnowdrops.jpg
+07/17/2002  04:56 PM            85,685 SourCreamBlueberryCoffeeCake.jpg
+07/17/2002  03:30 PM           225,736 BananaCakeFudge.jpg
+07/17/2002  04:40 PM            51,683 LemonCake.jpg
+04/14/2002  06:40 PM             2,356 KickedUpSpicyWalnutChocolateChipPeanuterCookies.txt
+07/17/2002  04:47 PM            73,354 PeanutButterBars.jpg
+07/17/2002  05:00 PM           200,124 TexasBrownies.jpg
+05/13/2002  06:56 AM             2,572 Bread_Pudding.htm
+07/17/2002  03:32 PM            73,223 BananaSquares.jpg
+07/17/2002  03:26 PM            86,268 BananaBreadPudding.jpg
+07/17/2002  04:42 PM           186,474 MochaCheesecake.jpg
+03/17/2002  01:03 PM               520 Key Lime Pie.txt
+07/17/2002  04:50 PM           196,125 pumpkinorangecookies.jpg
+07/17/2002  03:39 PM            71,372 CaramelNutBars.jpg
+07/17/2002  03:43 PM           167,022 CarrotCakeCreamCheese.jpg
+07/17/2002  04:09 PM           182,824 FrenchChocolateCake.jpg
+10/24/2004  04:10 PM             2,375 BreadPuddingandBourbonSauce.txt
+07/17/2002  04:48 PM            73,999 PeanutButterCookies.jpg
+07/17/2002  04:13 PM           183,699 GranniesPeanutButterCookies.jpg
+07/17/2002  04:59 PM           187,101 StrawberryShortcake2.jpg
+07/17/2002  03:50 PM           166,122 CinnamonSpirals.jpg
+07/17/2002  03:33 PM            69,637 BlackBottomBananaBars.jpg
+07/17/2002  05:02 PM            42,536 YuletideToffeeSquares.jpg
+07/17/2002  04:51 PM            85,320 PumpkinPieSquares.jpg
+12/16/2001  08:14 AM            23,040 Mostaccioli.doc
+03/17/2002  01:04 PM               520 KeyLimePie.txt
+07/17/2002  05:01 PM            79,906 ToffeeTopCakeSquares.jpg
+02/02/2003  05:26 PM             2,187 CREME_BRULE.htm
+07/17/2002  03:51 PM            41,017 CreamcheeseFrosting.jpg
+07/17/2002  05:11 PM             2,899 LemonBars.htm
+07/17/2002  03:40 PM           205,087 CarmelWalnutTart.jpg
+07/17/2002  04:52 PM           204,561 RockyMountainButterBars.jpg
+10/24/2004  04:10 PM               639 chofrosting.rtf
+07/17/2002  04:10 PM           169,141 FreshBerryCrumbPie.jpg
+07/17/2002  04:12 PM            45,008 GingerCrinkles.jpg
+12/10/2002  05:47 PM            20,534 BasicShortbread.htm
+07/17/2002  04:11 PM            67,747 FrostedBananaBars.jpg
+07/17/2002  03:49 PM           148,837 ChocPecanBrownies.jpg

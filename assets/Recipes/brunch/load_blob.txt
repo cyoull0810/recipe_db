@@ -1,0 +1,12 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/17/2002  05:04 PM           181,592 BaconCheeseQuiche.jpg
+07/17/2002  05:06 PM            92,169 FrenchBananaPancakes.jpg

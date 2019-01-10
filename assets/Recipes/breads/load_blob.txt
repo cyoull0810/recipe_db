@@ -1,0 +1,42 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/12/2002  04:32 PM           358,171 ChiliCornMuffins.jpg
+07/12/2002  04:36 PM             4,425 Fabulous Focaccia.htm
+07/12/2002  04:37 PM            53,858 SoftBreadsticks.jpg
+03/23/2002  04:16 PM             1,996 Greek_Pizza.htm
+07/12/2002  04:08 PM            49,520 BananaCrumbMuffins.jpg
+07/12/2002  04:33 PM           208,144 CinnamonNutBiscuits.jpg
+07/12/2002  04:10 PM           304,481 BlueberryMuffins.jpg
+07/12/2002  04:35 PM            62,832 CornCakes.jpg
+07/17/2002  05:13 PM           136,883 ParmHerbRolls.jpg
+07/12/2002  04:40 PM           162,663 ZucchiniBread.jpg
+07/17/2002  05:11 PM             3,102 KonaInnBananaBread.htm
+07/12/2002  04:37 PM               757 LemonBlueBiscuts.txt
+07/12/2002  04:07 PM            60,653 ApricotMuffins.jpg
+07/17/2002  05:16 PM           132,546 SpicyStromboli.jpg
+07/12/2002  03:24 PM           275,034 ButtermilkBiscuits2.jpg
+07/17/2002  05:16 PM            75,159 SausagEggCasserole.jpg
+10/24/2004  04:10 PM            10,826 GrilledFlatbread.htm
+07/12/2002  04:09 PM             1,167 BlubryFrenchToast.txt
+07/12/2002  04:32 PM            55,580 CheesyCronBread.jpg
+06/04/2007  08:57 PM               814 load_blob.txt
+03/23/2002  04:17 PM             3,104 Sponge_Dough.htm
+07/17/2002  05:16 PM            93,818 Pretzels.jpg
+07/12/2002  04:32 PM           357,895 ButterOnionBiscuits.jpg
+07/12/2002  04:39 PM             3,143 WhiteCheddarCracker.htm
+07/12/2002  04:11 PM            61,735 BluebryStreuselCake.jpg
+07/12/2002  04:38 PM           116,122 SourdoughBiscuits.jpg
+07/12/2002  04:36 PM           133,126 HamCheeseMuffins.jpg
+07/12/2002  04:11 PM            86,919 ButtermilkBiscuits.jpg
+07/12/2002  04:37 PM           391,889 PancakesCrepes.jpg
+10/24/2004  04:10 PM             2,408 BlueberryLemonBread.htm
+07/12/2002  04:34 PM           189,885 CinnamonRolls.jpg
+07/12/2002  04:38 PM           103,696 SourdoughStarter.jpg

@@ -1,0 +1,21 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/17/2002  05:18 PM            98,675 TortillaSoup.jpg
+10/03/2001  09:49 AM             1,767 greentomsoup.txt
+07/12/2002  12:22 PM            31,832 NavyBeanSoup.jpg
+07/12/2002  12:24 PM           131,638 PotatoKaleSoup.jpg
+07/12/2002  12:21 PM             2,647 ChilledCucumberSoup.htm
+07/12/2002  12:24 PM             1,557 PotatoChowderGrnChilie.txt
+07/12/2002  12:31 PM            47,653 RavioliSoup.jpg
+07/17/2002  04:39 PM            48,591 HeartyBeanSoup.jpg
+07/12/2002  12:26 PM               536 SpicyPotatoSoup.txt
+07/12/2002  12:22 PM             1,016 MexChixCornChowder.txt
+06/09/2007  04:38 PM               683 load_blob.txt

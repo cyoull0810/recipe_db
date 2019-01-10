@@ -1,0 +1,282 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+<!-- Vignette V/5 Tue May 20 08:28:03 2003 -->
+
+<html>
+	
+		<HEAD>
+		<TITLE>Food Network: Recipes</TITLE>
+		
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Refresh" content="1800">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+		<link rel="stylesheet" href="/food/cda/styles/recipePrint">
+		<script language="JavaScript">
+
+function popup(url,w,h,menu) {
+	x = Math.floor((screen.width - w) / 2);
+	y = Math.floor((screen.height - h) / 2);        
+	now = new Date();
+	features = "screenx="+x+",screeny="+y+",left="+x+",top="+y+",width="+w+",height="+h+",location=no,resizable=yes"+",directories=no,status=no,scrollbars=yes";
+
+	if (menu != null) {
+		//features += ",menubar=yes,toolbar=yes,scrollbars=yes";
+		features += ",menubar=yes,toolbar=yes";
+	} else {
+		//features += ",menubar=no,toolbar=no,scrollbars=no"; 
+		features += ",menubar=no,toolbar=no"; 
+	}
+	window.open(url,"newwin",features);
+}
+
+
+function MM_reloadPage(init) {  
+  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {
+    if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+     document.MM_pgW=innerWidth; 
+	 document.MM_pgH=innerHeight;
+	 onresize=MM_reloadPage; 
+    }
+  } else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH)
+    location.reload();
+}
+
+// for Netscape thisdomain = www.scripps.com
+// for other browser thisdomain = scripps.com
+
+thisdomain = document.location + "";
+thisdomain = thisdomain.substring(thisdomain.indexOf('//')+2,thisdomain.length);
+thisdomain = thisdomain.substring(0,thisdomain.indexOf('/'));
+thisdomain = (navigator.appName != "Netscape")? thisdomain.substring(thisdomain.indexOf('.')+1,thisdomain.length): thisdomain;
+
+
+
+function getCookieVal (offset) {
+	var endstr = document.cookie.indexOf(';',offset);
+	if (endstr == -1) {
+		endstr = document.cookie.length;
+	}
+	return unescape(document.cookie.substring(offset,endstr))
+}
+
+
+function SetCookie (name, value, expires, path, domain, secure) {
+	document.cookie = name + "=" + escape (value) + ((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+} 
+
+
+function GetCookie (name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i,j) == arg) {
+			return getCookieVal(j);
+		}
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i==0) break;
+	}
+	return null;  
+}
+
+
+function DeleteCookie (name, path, domain) {
+   if (GetCookie(name)) {
+    document.cookie = name + "=" + ((path) ? "; path=" + path : "") +  ((domain) ? "; domain=" + domain : "") + "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+   }
+}
+
+
+function FixCookieDate (date) { 
+	var base = new Date(0); 
+	var skew = base.getTime();
+	if(skew > 0)
+		date.setTime (date.getTime() - skew);     
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function vod (url,streamtitle,customfeatures) {
+	windowFeatures = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=210,height=480';
+
+	//Browser Detection
+	var browser = "";
+	var browsername = navigator.appName;
+	var browserversion = parseInt(navigator.appVersion);
+	var browserplatform = navigator.userAgent;
+	if (browsername == "Netscape") {
+		browser = "ns" + browserversion;
+	} else {
+		if (browsername == "Microsoft Internet Explorer") {
+			if (browserversion >= 4) {
+				browser = "ie" + browserversion;
+			} else {
+				browser = "ie3";
+			}
+		}
+	}
+
+	if ((customfeatures) && customfeatures != '') {
+		windowFeatures = customfeatures;
+	}
+
+	if (url.indexOf(".rm",(url.length-10)) != -1) {
+		if (browser != 'ie3') {
+			hasplugin = 'false';
+			// Mac Browser (Not Netscape)
+			if ( (browserplatform.indexOf('Mac') !=-1) && ( browsername != "Netscape")) {
+				numPlugins = 0;
+				// Real Strange never goes into the followinf loop
+				// because numPlugins is 0
+				for (i = 0; i < numPlugins; i++) {
+					plugin = navigator.embeds[i];
+					if (plugin.name.substring(0,10)=="RealPlayer") {
+						hasplugin = 'true';
+					}
+				}
+			} else {
+				numPlugins = navigator.plugins.length;
+				for (i = 0; i < numPlugins; i++) {
+					plugin = navigator.plugins[i];
+					if (plugin.name.substring(0,10)=="RealPlayer") {
+						hasplugin = 'true';
+					}
+				}
+			}
+			if (browser.substring(0,2) == 'ie') {
+				hasplugin = 'true';
+			}
+			if (hasplugin == 'true') {
+				videoWin = window.open (url , 'video', windowFeatures);
+				if (streamtitle != '') {
+					videoWin.streamtitle=streamtitle;
+				}
+				videoWin.document.close();              
+			} else {
+				stream = url.substring(0,(url.length-5));
+				location.href=stream + '.ram';
+			}
+		} else {
+			videoWin = window.open (url , 'video', windowFeatures);
+			if (document.images) {
+				if (streamtitle != '') {
+					videoWin.streamtitle=streamtitle;
+				}
+			}
+			videoWin.document.close();                      
+		}               
+	} else {
+		videoWin = window.open (url , 'video', windowFeatures);
+		if (document.images) {
+			if (streamtitle != '') {
+				videoWin.streamtitle=streamtitle;
+			}
+		}
+		videoWin.document.close();
+	}
+}
+</script>
+
+		
+		
+		
+		
+		<script type='text/javascript'>
+		<!--
+		// Prevent others from including this site
+		var preview = 'no'
+		if (preview != 'yes') {
+			if (top != self) {
+				top.location = location;
+			}
+		}
+
+		MM_reloadPage(true);
+
+		if (GetCookie('cookieChk') == null) { 
+			var expdate = new Date ();
+
+			// Correct for Mac date bug - call only once for given Date object!
+			FixCookieDate (expdate); 
+
+			// expires 30 days from now
+			expdate.setTime (expdate.getTime() + (30 * 24 * 60 * 60 * 1000)); 
+			SetCookie ('cookieChk', 'OK', expdate, '/', thisdomain, null);
+		}
+		// -->
+		</script>
+		</HEAD><body bgcolor="#FFFFFF" link="#666699" vlink="#666699" alink="#666699">
+	<table width="100%" border=0 cellpadding=0 cellspacing=0>
+	<tr><td width="50"><img src="/food/images/spacers/spacer.gif" width="50" border="0"></td>
+	<td>
+			<!-- Begin Feature Table -->
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td valign="top"><span class="Small_text"><img src="/food/images/logos/4x6_recipe_card_logo.gif"><br><br><span class="headline1">Orecchiette with Toasted Breadcrumbs</span><br><span class="bodytext">Recipe courtesy Giada De Laurentiis</span></span></td>
+				</tr>
+			</table>
+			<!-- end Feature Table -->
+		<p></p>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="5" class="subsectioncatsalt">&nbsp;Recipe Summary</td>
+				</tr>
+				
+					<tr>
+						<td width="11" height="20" class="recipesummary1"><img src="/food/images/spacers/spacer.gif" width="11" height="1"></td>
+						<td width="50%" height="20" class="recipesummary1"><b>Prep Time:</b>&nbsp;10 minutes</td>
+						<td width="11" height="20" class="recipesummary1"><img src="/food/images/spacers/spacer.gif" width="11"></td>
+				
+						<td width="50%" height="20" class="recipesummary1"><b>Cook Time:</b>&nbsp;15 minutes</td>
+					</tr>
+					<tr>
+						<td width="11" height="20" class="recipesummary2"><img src="/food/images/spacers/spacer.gif" width="11" height="1"></td>
+						<td width="50%" height="20" class="recipesummary2"><b>Yield:</b>&nbsp;4 servings</td>
+						<td width="11" height="20" class="recipesummary2"><img src="/food/images/spacers/spacer.gif" width="11"></td>
+				
+					<td width="50%" class="recipesummary2">&nbsp;</td>
+				</tr>
+			</table><span class="bodytext">1 pound dried orecchiette or other small shaped pasta
+<BR>3/4 cup extra-virgin olive oil
+<BR>2/3 cup Italian seasoned dried bread crumbs
+<BR>Sea salt and freshly ground black pepper
+<BR>1/4 cup grated Parmesan 
+<BR>1 cup finely chopped prosciutto
+<BR>2 tablespoons chopped fresh parsley leaves 
+
+<P>
+<BR></span><p></p><span class="bodytext">In a large pot, bring to a boil 6 quarts of salted water. Cook pasta until al dente, about 8 minutes. 
+
+<P>Meanwhile, in a medium-sized saute pan, heat the oil until warm. Since the bread crumbs will cook quickly, you don't want to add them into a hot pan, otherwise they can burn. Add the breadcrumbs and stir constantly. Season lightly with salt and pepper since flavored bread crumbs may already have seasoning. Saute for about 2 minutes. Remove from heat and set aside.
+
+<P>Drain pasta in a colander. Working quickly, add pasta to the saute pan and stir to combine. Add Parmesan and the chopped prosciutto. Mix thoroughly. Pour into large serving bowl and garnish with chopped parsley. 
+<BR></span><br><p></p><span class="bodytext">Episode#: EI1A02</span><p></p><span class="bodytext">Copyright &copy; 2003 Television Food Network, G.P., All Rights Reserved</span></td>
+	</tr></table>
+</body>
+</html>

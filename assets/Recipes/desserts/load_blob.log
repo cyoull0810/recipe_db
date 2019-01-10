@@ -1,0 +1,53 @@
+
+SQL*Loader: Release 10.2.0.3.0 - Production on Sat Jun 9 15:39:05 2007
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   load_blob.txt
+Data File:      load_blob.txt
+  Bad File:     load_blob.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table LOB_STAGE, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TIME_STAMP                           1:18    18           DATE MM/DD/YYYY HH:MI
+FILENAME                           40:100    61           CHARACTER            
+DATA                              DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field FILENAME
+
+SQL*Loader-502: unable to open data file 'KickedUpSpicyWalnutChocolateChipPeanuterCookies.txt' for field DATA table LOB_STAGE
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: The system cannot find the file specified.
+
+Table LOB_STAGE:
+  107 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                   5376 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           107
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Sat Jun 09 15:39:05 2007
+Run ended on Sat Jun 09 15:39:21 2007
+
+Elapsed time was:     00:00:16.57
+CPU time was:         00:00:00.61

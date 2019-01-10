@@ -1,0 +1,21 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/12/2002  12:45 PM            29,570 SpicedWine.jpg
+07/12/2002  12:46 PM            84,643 ZimaMixology.jpg
+07/12/2002  12:44 PM            48,747 HolidayIrishCream.jpg
+09/05/2001  10:43 AM           980,375 Absolut.pdf
+07/12/2002  09:01 PM            27,229 LimeDrop.jpg
+07/12/2002  12:45 PM           130,153 JavaJuices.jpg
+07/17/2002  05:08 PM            31,392 GoldenGingerPunch.jpg
+10/30/2001  10:31 AM             4,991 PerfectMargarita.htm
+05/30/2007  06:34 PM               769 load_blob.txt
+09/11/2002  07:26 PM            33,453 absolut.htm
+07/12/2002  12:45 PM            30,827 HotCocaMix.jpg

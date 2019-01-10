@@ -1,0 +1,23 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/12/2002  09:14 PM            90,371 PorkGreenChiliCasserole.jpg
+07/12/2002  05:15 PM             3,702 ThaiSteakWrap.htm
+09/06/2001  06:23 AM           282,848 bbqbrisket.jpg
+12/08/2002  05:00 PM             3,270 BeefStroganoff.htm
+07/12/2002  05:14 PM           185,912 TacoPizza.jpg
+07/17/2002  05:14 PM            69,244 PorkTacos.jpg
+06/09/2007  04:29 PM               814 load_blob.txt
+01/08/2002  12:10 PM            31,015 Recipes_cm.htm
+07/12/2002  05:14 PM           397,176 BeefProvencale.jpg
+07/17/2002  05:06 PM           139,254 CorianderSteak.jpg
+10/24/2004  04:10 PM             2,853 smokedporkshoulder.txt
+07/12/2002  09:17 PM            36,749 JalapenoGrilledPork.jpg
+07/12/2002  05:14 PM           170,384 PartyBeefCasserole.jpg

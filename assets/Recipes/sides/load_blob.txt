@@ -1,0 +1,24 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/11/2002  07:21 PM             1,862 Patato-ParsnipPuree.txt
+07/17/2002  05:08 PM            95,638 GreenBeanCreamMshrm.jpg
+07/17/2002  05:04 PM            77,264 AsparagusCheeseStrata.jpg
+07/11/2002  07:22 PM             1,309 Potato-CornFritters.txt
+07/11/2002  07:23 PM             1,361 SauteedMushroomsGreenBeans.txt
+07/11/2002  07:41 PM               747 ScallopedOnionsPeas.txt
+07/11/2002  07:20 PM            57,838 cabbagecasserole.jpg
+07/16/2002  09:02 PM             2,660 ProperPolenta.htm
+09/24/2001  03:57 PM             2,030 PolentaFrys.txt
+07/11/2002  07:19 PM             1,044 BalsamicRostedCarrots.txt
+07/11/2002  07:21 PM               408 Oven-BakedAsparagus.txt
+06/09/2007  05:53 PM             1,279 load_blob.txt
+11/20/2001  05:33 PM             3,168 BalsamicGlazedPearlOnions.htm
+07/11/2002  07:42 PM               610 CranberryWildRicePilaf.txt

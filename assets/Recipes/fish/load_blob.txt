@@ -1,0 +1,20 @@
+LOAD DATA
+INFILE *
+REPLACE
+INTO TABLE LOB_STAGE
+(
+ time_stamp position(1:18) date "MM/DD/YYYY HH:MI",
+ filename position(40:100),
+ data     lobfile(filename) TERMINATED by EOF
+)
+BEGINDATA
+07/17/2002  05:12 PM           108,757 PanSearedShrimpChorizoBtr.jpg
+07/17/2002  05:17 PM           109,216 TequilaMintScallopTostadas.jpg
+07/17/2002  05:10 PM            73,514 GrilledSeaScallopsCornSalad.jpg
+06/09/2007  10:42 AM               323 load_blob.txt
+07/17/2002  03:34 PM            36,359 BlackPepperShrimp.jpg
+07/12/2002  08:30 PM           109,335 ShrimpDijon.jpg
+07/12/2002  08:30 PM           120,580 SpicyCajunShrimp.jpg
+07/17/2002  05:07 PM            92,495 GarlickyShrimpTacos.jpg
+07/12/2002  08:29 PM            87,278 dryrub.jpg
+07/12/2002  09:05 PM           100,411 SesameShrimp.jpg
