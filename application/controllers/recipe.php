@@ -13,7 +13,7 @@ public function index()
   {  
      // $this->load->view('templates/header');
       $this->load->view('recipes/index');
-     //  $this->load->view('templates/footer');
+      $this->load->view('templates/footer');
 
   }
 
