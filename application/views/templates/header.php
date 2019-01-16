@@ -37,8 +37,6 @@
       <a class="nav-item nav-link" href="<?php echo base_url('index.php/recipe/recipe_menu/meat'); ?>">Meat</a>
       <a class="nav-item nav-link" href="<?php echo base_url('index.php/recipe/recipe_menu/salsa_dips'); ?>">Salsa_dips</a>
       <a class="nav-item nav-link" href="<?php echo base_url('index.php/recipe/recipe_menu/sides'); ?>">Sides</a>
-
-      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
     </div>
   </div>
 </nav>
