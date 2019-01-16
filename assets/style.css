@@ -3,7 +3,7 @@ body.signin-body {
 }
 body.main-body {
     background-color: #eff2f5;
-    background-image: url('http://localhost/recipe/assets/images/basil.jpg'); 
+   /* background-image: url('http://localhost/recipe/assets/images/basil.jpg'); */
 }
 
 .container.signin-container {

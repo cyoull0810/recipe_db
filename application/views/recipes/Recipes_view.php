@@ -6,24 +6,18 @@
 //echo '<pre>';
 //print_r($category['recipes']);
 
-//
-//foreach ($category['recipes'] as $item) {  
-//  echo $item['RECIPE'];
-//  echo $item['CATEGORY'];
-//  echo $item['LOCATION'];
-//} 
 ?>
 
 <head>
-        <title>Last 10 Results</title>
+    
     </head>
     <body>
     <div class="container-fluid"> 
     <div class="table-responsive"> 
-        <table class="table-striped">
+        <table class="table-hover">
         <thead>
             <tr>
-                <td>Recipe</td>
+                <td> </td>
             </tr>
         </thead>
         <tbody>
@@ -37,8 +31,10 @@
   ?>
    </tbody>
             </table>
-      </div>
-      </div>        
+
+            </div>
+            </div>
+     
     </body>
 </html>
 

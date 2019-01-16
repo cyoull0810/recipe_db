@@ -11,7 +11,6 @@ class Recipe extends CI_Controller {
   //public function recipe_summary()
 public function index()
   {  
-     // $this->load->view('templates/header');
       $this->load->view('recipes/index');
       $this->load->view('templates/footer');
 
@@ -20,8 +19,6 @@ public function index()
   public function recipe_menu($category) {
     $this->load->model('Recipes_model');
     $data['category'] = $this->Recipes_model->get_recipes($category);
-    // $this->load->view('templates/header');
-   
     $this->load->view('recipes/Recipes_view', $data);
     $this->load->view('templates/footer');
   
