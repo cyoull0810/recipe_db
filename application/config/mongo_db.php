@@ -28,11 +28,11 @@
 $config['mongo_db']['active'] = 'default';
 
 $config['mongo_db']['default']['no_auth'] = true;
-$config['mongo_db']['default']['hostname'] = 'localhost';
-$config['mongo_db']['default']['port'] = '27017';
-$config['mongo_db']['default']['username'] = '';
-$config['mongo_db']['default']['password'] = '';
-$config['mongo_db']['default']['database'] = 'recipe';
+$config['mongo_db']['default']['hostname'] = getenv('DB_HOST');
+$config['mongo_db']['default']['port'] = getenv('DB_PORT');
+$config['mongo_db']['default']['username'] = getenv('DB_USER');
+$config['mongo_db']['default']['password'] = getenv('DB_PASS');;
+$config['mongo_db']['default']['database'] = getenv('DB_DATABASE');;
 $config['mongo_db']['default']['db_debug'] = TRUE;
 $config['mongo_db']['default']['return_as'] = 'array';
 $config['mongo_db']['default']['write_concerns'] = (int)1;
