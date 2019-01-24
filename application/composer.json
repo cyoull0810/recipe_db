@@ -1,5 +1,4 @@
 {
-    "require": {
-        "vlucas/phpdotenv": "^2.2"
-    }
+    "name": "cyoull/application",
+    "require": {}
 }
