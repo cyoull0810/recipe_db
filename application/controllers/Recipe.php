@@ -21,6 +21,7 @@ public function index()
     $data['category'] = $this->Recipes_model->get_recipes($category);
     $this->load->view('recipes/Recipes_view', $data);
     $this->load->view('templates/footer');
+
   
   // For testing to dump the array values returned
   // echo '<pre>';
