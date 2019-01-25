@@ -47,8 +47,8 @@
  *
  * This can be set to anything, but default usage is:
  *
- *     development
- *     testing
+ *     develop
+ *     qa
  *     production
  *
  * NOTE: If you change these, also change the error_reporting() code below
@@ -65,12 +65,12 @@
  */
 switch (ENVIRONMENT)
 {
-	case 'development':
+	case 'develop':
 		error_reporting(-1);
 		ini_set('display_errors', 1);
 	break;
 
-	case 'testing':
+	case 'qa':
 	case 'production':
 		ini_set('display_errors', 0);
 		if (version_compare(PHP_VERSION, '5.3', '>='))
