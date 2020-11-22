@@ -41,5 +41,7 @@ $config['mongo_db']['default']['read_preference'] = 'primary';
 $config['mongo_db']['default']['read_concern'] = 'local'; //'local', 'majority' or 'linearizable'
 $config['mongo_db']['default']['legacy_support'] = TRUE;
 
+
+
 /* End of file database.php */
 /* Location: ./application/config/database.php */

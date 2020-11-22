@@ -70,8 +70,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
-$active_group = 'default';
+$active_group = 'mongo_db';
 $query_builder = TRUE;
+/*
+DB_HOST="localhost"
+DB_PORT="27017"
+DB_USER=""
+DB_PASS=""
+DB_DATABASE="recipe"
 
 $db['default'] = array(
 	'dsn'	=> '',
@@ -94,4 +100,19 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+*/
+$db['mongo_db']['active'] = 'default';
 
+$db['mongo_db']['default']['no_auth'] = true;
+$db['mongo_db']['default']['hostname'] = getenv('DB_HOST');
+$db['mongo_db']['default']['port'] = getenv('DB_PORT');
+$db['mongo_db']['default']['username'] = getenv('DB_USER');
+$db['mongo_db']['default']['password'] = getenv('DB_PASS');;
+$db['mongo_db']['default']['database'] = getenv('DB_DATABASE');;
+$db['mongo_db']['default']['db_debug'] = TRUE;
+$db['mongo_db']['default']['return_as'] = 'array';
+$db['mongo_db']['default']['write_concerns'] = (int)1;
+$db['mongo_db']['default']['journal'] = TRUE;
+$db['mongo_db']['default']['read_preference'] = 'primary'; 
+$db['mongo_db']['default']['read_concern'] = 'local'; //'local', 'majority' or 'linearizable'
+$db['mongo_db']['default']['legacy_support'] = TRUE;
